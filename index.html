@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sithara Geethanjali | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #daa2e4, #faf9f8);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #340f5c, #e697a3);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid black;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: textPop 1s ease-out;
+    }
+    @keyframes textPop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: navy;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: rgb(187, 152, 251);
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: burlywood;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 1rem;
+      border-left: 5px solid lightslategray;
+      padding-left: 0.5rem;
+    }
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+    ul li a {
+      color: darkblue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.4rem;
+      background: rgb(54, 94, 15);
+      color: rgb(231, 179, 196);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .contact-buttons a:hover {
+      background: #6a11cb;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      background: #1e1e2f;
+      color: #ddd;
+      padding: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      header img {
+        width: 140px;
+        height: 140px;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="my.jpg" alt="Sithara Geethanjali profile photo" />
+  <h1>Hi I'm Sithara</h1>
+  <p>IT Undergraduate | Developer | UI/UX Enthusiast</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>I'm following a Higher National Diploma in IT at ATI Tangalle. I’m passionate about building web & mobile applications, and always eager to learn new technologies like Flutter and Python. I strive to be creative, professional, and user-focused in all my work.</p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Tools</h2>
+  <ul>
+    <li><strong>Languages:</strong> Java, C#, PHP, Python</li>
+    <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+    <li><strong>Backend/DB:</strong> MySQL, Access</li>
+    <li><strong>Frameworks:</strong> Java Swing, React</li>
+    <li><strong>Tools:</strong> VS Code, NetBeans, IntelliJ, GitHub</li>
+    <li><strong>UI/UX:</strong> Figma</li>
+    <li><strong>Photo Editing:</strong> Photoshop</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <ul>
+    <li><strong>My Portfolio:</strong> <a href="https://kalanikk.github.io/My-Portfilo/" target="_blank">Live Preview</a></li>
+    <li><strong>Quiz Game:</strong> <a href="https://kalanikk.github.io/Quiz-/" target="_blank">Live Preview</a></li>
+    <li><strong>Salon Website:</strong> <a href="https://kalanikk.github.io/diwya-final/" target="_blank">Live Preview</a></li>
+    <li><strong>SM Web System:</strong> <a href="https://replit.com/@geethanjalisith/STU" target="_blank">Live Preview</a></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:geethanjalisithara044@gmail.com">geethanjalisithara044@gmail.com</a></p>
+  <p><strong>Phone:</strong> 0701797361</p>
+  <p><strong>WhatsApp:</strong> 0710854456</p>
+  <div class="contact-buttons">
+    <a href="mailto:geethanjalisithara044@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://wa.me/94710854456" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://github.com/Kalanikk" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.figma.com/design/goijWcjQeqZMTywoJbK6Ff/Untitled?node-id=0-1&t=qaniVHmtW3kscDOm-0" target="_blank"><i class="fab fa-figma"></i> Figma</a>
+    <a href="https://www.linkedin.com/in/sithara-geethanjali-355986343" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Sithara Geethanjali. All Rights Reserved.
+</footer>
+
+</body>
+</html>
